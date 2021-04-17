@@ -1,52 +1,55 @@
-.contacts{
-    height: 100vh;
-    background-color: beige;
-    
+.contacts {
+  height: 100vh;
+  background-color: beige;
 }
-.form{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    
-    margin: 0 auto;
-    padding: 10px;
-    border-radius: 15px;
-    
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 15px;
 }
-.listContacts{
-    border: 2px solid grey;
-    background-color: rgb(155, 144, 144);
-    width: 800px;
+.listContacts {
+  border: 2px solid grey;
+  background-color: rgb(155, 144, 144);
+  width: 800px;
 }
 thead > tr > th {
-    padding: 5px;
-    border-bottom: 4px solid black;
+  padding: 5px;
+  border-bottom: 2px solid black;
 }
-.user{
-    background-color: khaki;
-    border: 1px solid black;
+.user {
+  background-color: khaki;
+  border: 1px solid black;
 }
-.user > th{
-    padding: 10px;
+.user > th {
+  padding: 10px;
 }
-.deleteUser{
-    display: block;
-    width: 40px;
-    background-color: rgb(199, 49, 49);
-    padding: 5px;
-    line-height: 20px;
-    border-radius: 10px;
+.deleteUser {
+  display: block;
+  width: 40px;
+  background-color: rgb(199, 49, 49);
+  padding: 3px 7px;
+  line-height: 20px;
+  border-radius: 10px;
 }
-.input{
-    margin: 20px 0;
-    border: 2px solid blue;
-    line-height: 20px;
-    padding: 5px;
+.input {
+  margin: 20px 0;
+  border: 2px solid blue;
+  line-height: 20px;
+  padding: 5px;
+  border-radius: 10px;
 }
-.button{
-    line-height: 20px;
-    padding: 5px 15px;
-    border-radius: 10px;
-    background-color: cadetblue;
+.button {
+  line-height: 20px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  background-color: cadetblue;
+}
+
+.error {
+  border: 2px solid red;
 }

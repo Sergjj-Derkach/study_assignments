@@ -6,38 +6,42 @@ const nameInput = document.getElementById('name');
 const surnameInput = document.getElementById('surname');
 const phoneInput = document.getElementById('phone');
 const btnAdd = document.getElementById('btnAdd');
+const inputs = document.getElementById('inputsForm');
 
-let user;
+let contact;
 
 
 form.addEventListener('submit', onSubmitForm);
 form.addEventListener('click', onclickForm);
+inputs.addEventListener('focus', onFocusInputs, true);
+inputs.addEventListener('blur', onBlurInputs, true);
 
 function onSubmitForm(e) {
     e.preventDefault();
     getInputValue();
-    addNewUser(user);
+    addNewUser(contact);
     form.reset();
 }
+
 function onclickForm(e) {
     deleteUser(e);
 }
 
 
 function getInputValue() {
-    return user = {
+    return contact = {
         name: nameInput.value,
         surname: surnameInput.value,
         phone: phoneInput.value,
     }
 }
+
 function addNewUser(item) {
     let htmlEl = document.createElement('tr');
     htmlEl.classList.add('user');
     htmlEl.innerHTML += htmlTemplate.replace('{{name}}', item.name)
         .replace('{{surname}}', item.surname)
         .replace('{{phone}}', item.phone);
-
     table.appendChild(htmlEl);
 }
 
@@ -55,3 +59,29 @@ function deleteUser(e) {
 function deleteRow(el) {
     el.remove();
 }
+
+function onBlurInputs(e) {
+    if (!validate(e.target.value)) {
+        makeInvalide(e.target)
+        if (e.target.classList.contains('button')) {
+            makeValide(e.target)
+        }
+    }
+}
+
+function onFocusInputs(e) {
+    makeValide(e.target);
+}
+
+function makeInvalide(el) {
+    el.classList.add('error');
+}
+
+function makeValide(el) {
+    el.classList.remove('error');
+}
+
+function validate(value) {
+    return !!value.trim();
+}
+
