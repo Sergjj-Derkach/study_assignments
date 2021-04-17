@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="resetcss.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <section class="contacts">
+        <form class="form" id="form">
+            <table class="listContacts" id="listContacts">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Surmane</th>
+                        <th>Phone</th>
+                        <th>Edit</th>
+                    </tr>
+                </thead>
+                <tr class="user">
+                    <th>Ivan</th>
+                    <th>Ivanov</th>
+                    <th>380986283580</th>
+                    <th><span class="deleteUser" id="deleteUser">X</span></th>
+                </tr>
+                <tfoot>
+                    <tr>
+                        <th><input type="text" id="name" class="input" placeholder="add name..."></th>
+                        <th><input type="text" id="surname" class="input" placeholder="add surmane..."></th>
+                        <th><input type="text" id="phone" class="input" placeholder="add phone..."></th>
+                        <th><button id="btnAdd" class="button">add</button></th>
+                    </tr>
+                </tfoot>
+            </table>
+        </form>
+
+    </section>
+    <script type="text/template" id="template">
+
+            <th>{{name}}</th>
+            <th>{{surname}}</th>
+            <th>{{phone}}</th>
+            <th><span class="deleteUser" id="deleteUser">X</span></th>
+        
+    </script>
+</body>
+
+</html>
