@@ -37,12 +37,14 @@ function getInputValue() {
 }
 
 function addNewUser(item) {
-    let htmlEl = document.createElement('tr');
-    htmlEl.classList.add('user');
-    htmlEl.innerHTML += htmlTemplate.replace('{{name}}', item.name)
+    if (item.name !== '' && item.phone !== ''){
+        let htmlEl = document.createElement('tr');
+        htmlEl.classList.add('user');
+        htmlEl.innerHTML += htmlTemplate.replace('{{name}}', item.name)
         .replace('{{surname}}', item.surname)
         .replace('{{phone}}', item.phone);
-    table.appendChild(htmlEl);
+        table.appendChild(htmlEl);
+    }
 }
 
 function resetForm() {
