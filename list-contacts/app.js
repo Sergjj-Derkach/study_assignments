@@ -46,7 +46,6 @@ function addNewUser(item) {
         .replace('{{phone}}', item.phone);
         table.appendChild(htmlEl);
     }else{
-        console.log('error')
         showText(errorEl);
     }
 }
