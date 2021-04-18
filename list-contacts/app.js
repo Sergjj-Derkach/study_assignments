@@ -7,7 +7,7 @@ const surnameInput = document.getElementById('surname');
 const phoneInput = document.getElementById('phone');
 const btnAdd = document.getElementById('btnAdd');
 const inputs = document.getElementById('inputsForm');
-
+const errorEl = document.getElementById('errorText');
 let contact;
 
 
@@ -38,12 +38,16 @@ function getInputValue() {
 
 function addNewUser(item) {
     if (item.name !== '' && item.phone !== ''){
+        delErrorText();
         let htmlEl = document.createElement('tr');
         htmlEl.classList.add('user');
         htmlEl.innerHTML += htmlTemplate.replace('{{name}}', item.name)
         .replace('{{surname}}', item.surname)
         .replace('{{phone}}', item.phone);
         table.appendChild(htmlEl);
+    }else{
+        console.log('error')
+        showText(errorEl);
     }
 }
 
@@ -86,4 +90,12 @@ function makeValide(el) {
 function validate(value) {
     return !!value.trim();
 }
+
+function showText(errorEl){
+    errorEl.classList.add('showErrorText');
+}
+function delErrorText(){
+    errorEl.classList.remove('showErrorText');
+}
+
 

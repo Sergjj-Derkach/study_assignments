@@ -1,29 +1,24 @@
 .contacts {
   height: 100vh;
-  background-color: beige;
+  background-color: rgb(155, 144, 144);
 }
 .form {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-
   margin: 0 auto;
-  padding: 10px;
-  border-radius: 15px;
+  padding: 10px 0 100px;
 }
-.listContacts {
-  border: 2px solid grey;
-  background-color: rgb(155, 144, 144);
-  width: 800px;
-}
+
 thead > tr > th {
   padding: 5px;
   border-bottom: 2px solid black;
 }
 .user {
   background-color: khaki;
-  border: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 .user > th {
   padding: 10px;
@@ -37,7 +32,7 @@ thead > tr > th {
   border-radius: 10px;
 }
 .input {
-  margin: 20px 0;
+  margin: 20px 5px;
   border: 2px solid blue;
   line-height: 20px;
   padding: 5px;
@@ -52,4 +47,16 @@ thead > tr > th {
 
 .error {
   border: 2px solid red;
+}
+.errorText {
+  display: none;
+  background-color: rgb(207, 60, 60);
+  padding: 5px;
+  width: 300px;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid rgb(93, 93, 126);
+}
+.showErrorText {
+  display: block;
 }
