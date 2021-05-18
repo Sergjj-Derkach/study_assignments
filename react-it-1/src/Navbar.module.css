@@ -3,15 +3,17 @@
   grid-area: n;
   padding: 5px 20px;
 }
-.nav > .item{
+.nav > .item {
   background-color: burlywood;
-  margin:10px  auto;
+  margin: 10px auto;
   text-align: center;
   padding: 5px;
 }
-.nav > .item > a{
+.nav > .item > a {
   text-decoration: none;
+  color: rgb(51, 48, 88);
+  font-size: 20px;
 }
-.nav > .item:hover{
+.nav > .item:hover {
   background-color: rgb(211, 138, 42);
 }

@@ -1,5 +1,10 @@
 .content {
-  background-color: chartreuse;
+  background-color: rgb(175, 211, 138);
   grid-area: c;
-  padding: 20px;
+  padding: 10px;
+}
+.contentHeader {
+  width: 100%;
+  min-height: 250px;
+  background-color: burlywood;
 }

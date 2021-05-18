@@ -1,21 +1,16 @@
 import React from 'react';
-import './maincontent.css';
+import classes from './maincontent.css';
 
 const MainContent = () => {
     return (
         <div className="content">
-            <div>
-                <img
-                    src="https://imgcomfort.com/Userfiles/Upload/images/illustration-geiranger.jpg"
-                    alt=""
-                />
-            </div>
+            <div className="contentHeader"></div>
             <div>
                 avatar + discription
-        </div>
+            </div>
             <div>
                 my post
-          <div>new post</div>
+                <div>new post</div>
                 <div>
                     <div>post 1</div>
                     <div>post 2</div>
