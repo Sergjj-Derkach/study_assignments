@@ -1,9 +1,14 @@
 import React from 'react';
-import './header.css';
+import classes from './header.module.css';
 
 const Header = () => {
     return (
-        <header className="header">This Header!!!</header>
+        <header className={classes.header}>
+            <span className={classes.logo}>Logo</span>
+            <div className={classes.headerText}>
+                <p>This is Header.</p>
+            </div>
+        </header>
     )
 
 }
