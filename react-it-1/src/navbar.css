@@ -1,0 +1,13 @@
+.nav {
+  background-color: burlywood;
+  grid-area: n;
+}
+.nav > div{
+  background-color: burlywood;
+  margin:10px  auto;
+  text-align: center;
+  padding: 5px;
+}
+.nav > div:hover{
+  background-color: rgb(211, 138, 42);
+}

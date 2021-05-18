@@ -1,0 +1,7 @@
+.header {
+    background-color: rgb(112, 100, 100);
+    grid-area: h;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 30px;
+  }

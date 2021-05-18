@@ -9,15 +9,5 @@
   grid-template-columns: minmax(100px,300px) 8fr;
   /* grid-gap: 10px; */
 }
-.header {
-  background-color: brown;
-  grid-area: h;
-}
-.nav {
-  background-color: burlywood;
-  grid-area: n;
-}
-.content {
-  background-color: chartreuse;
-  grid-area: c;
-}
+
+
