@@ -5,8 +5,11 @@ const MainContent = () => {
     return (
         <div className="content">
             <div className="contentHeader"></div>
-            <div>
-                avatar + discription
+            <div className="profile">
+                <div className="profileFoto">
+                    <span className="foto"></span>
+                </div>
+                <div className="profileDiscription">Discription</div>
             </div>
             <div>
                 my post

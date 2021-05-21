@@ -8,3 +8,23 @@
   min-height: 250px;
   background-color: burlywood;
 }
+.profile{
+  display: flex;
+  align-items: center;
+  background-color: cadetblue;
+  padding: 10px 20px;
+  margin-top: 5px;
+}
+.profileFoto{
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin-right: 20px;
+  /* padding: 5px; */
+}
+.foto{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: chocolate;
+}
