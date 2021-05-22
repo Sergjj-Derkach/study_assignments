@@ -6,6 +6,6 @@
   grid-template-areas:
     "h h"
     "n c";
-  /* grid-template-rows: minmax(100px 150px) 9fr; */
+  grid-template-rows: 2fr 9fr;
   grid-template-columns: 1fr 7fr;
 }

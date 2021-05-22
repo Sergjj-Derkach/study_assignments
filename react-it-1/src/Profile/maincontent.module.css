@@ -1,5 +1,5 @@
 .content {
-  background-color: rgb(175, 211, 138);
+  background-color: rgb(218, 221, 214);
   grid-area: c;
   padding: 10px;
 }
@@ -8,46 +8,48 @@
   min-height: 250px;
   background-color: burlywood;
 }
-.profile{
+.profile {
   display: flex;
   align-items: center;
-  background-color: cadetblue;
+  background-color: rgb(163, 178, 179);
   padding: 10px 20px;
   margin-top: 5px;
 }
-.profileFoto{
+.profileFoto {
   display: flex;
   justify-self: center;
   align-items: center;
   margin-right: 20px;
 }
-.foto{
+.foto {
   width: 70px;
   height: 70px;
   border-radius: 50%;
   background-color: chocolate;
 }
-.userPosts{
-  background-color: rgb(168, 223, 223);
+.userPosts {
   margin-top: 5px;
   padding: 5px 10px;
 }
-.lastPost, .newPost{
+.newPost {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: rgb(236, 212, 203);
+  flex-direction: column;
+  background-color: rgb(233, 220, 216);
   padding: 10px;
   border: 2px solid grey;
-  border-radius: 30px;
+  border-radius: 15px;
   margin-bottom: 15px;
 }
-.autorPost{
-  width: 50px;
-  height: 50px;
-  background-color: crimson;
-  border-radius: 50%;
-}
-.textPost{
+.textPost {
+  border-radius: 5px;
+  padding: 5px;
   font-size: 20px;
+}
+.addBtn {
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  align-self: flex-end;
 }
