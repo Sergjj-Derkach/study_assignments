@@ -19,9 +19,9 @@ const MainContent = () => {
                     <textarea rows="3" placeholder="Add new post" className={classes.textPost}></textarea>  
                     <button className={classes.addBtn}>Add</button>  
                 </div> 
-                <Post />                   
-                <Post />                   
-                <Post />                   
+                <Post message = 'Привет, как твои дела?' likes='15'/>                   
+                <Post message = 'У меня все хорошо' likes='23' />                   
+                                  
             </div>
         </div>
     )
