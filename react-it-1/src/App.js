@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom"
+import { BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./Header/Header";
 import MainContent from "./Profile/MainContent";
@@ -21,7 +21,6 @@ const App = () => {
           <Route path='/new' component={New} />
           <Route path='/music' component={Music} />
           <Route path='/setting' component={Setting} />
-
         </div>
       </div>
     </BrowserRouter>

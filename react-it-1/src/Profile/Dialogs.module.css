@@ -3,3 +3,24 @@
   grid-area: c;
   padding: 10px;
 }
+.dialogs{
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+}
+.dialogs_item,.messages  {
+  padding: 10px;
+}
+.dialogs_item .active{
+  color:red;
+}
+.dialog{
+  background-color: rgb(92, 206, 81);
+  padding: 5px 10px;
+}
+.messages{
+  padding: 10px;
+}
+.message{
+background-color: rgb(159, 184, 135);
+padding: 5px 10px;
+}
