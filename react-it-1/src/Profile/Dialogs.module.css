@@ -7,6 +7,7 @@
   display: grid;
   grid-template-columns: 3fr 9fr;
 }
+
 .dialogs_item,.messages  {
   padding: 10px;
 }
@@ -19,6 +20,7 @@
 }
 .messages{
   padding: 10px;
+  
 }
 .message{
 background-color: rgb(159, 184, 135);

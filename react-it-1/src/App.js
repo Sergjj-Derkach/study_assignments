@@ -16,11 +16,11 @@ const App = () => {
         <Header />
         <NavBar />
         <div className='app-wrapper-main'>
-          <Route path='/profile' component={MainContent} />
-          <Route path='/dialogs' component={Dialogs} />
-          <Route path='/new' component={New} />
-          <Route path='/music' component={Music} />
-          <Route path='/setting' component={Setting} />
+          <Route exact path='/profile' component={MainContent} />
+          <Route exact path='/dialogs' component={Dialogs} />
+          <Route exact path='/new' component={New} />
+          <Route exact path='/music' component={Music} />
+          <Route exact path='/setting' component={Setting} />
         </div>
       </div>
     </BrowserRouter>
