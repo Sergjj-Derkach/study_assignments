@@ -1,0 +1,29 @@
+.newPost {
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgb(233, 220, 216);
+  padding: 10px;
+  border: 2px solid grey;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.userPosts {
+  margin-top: 5px;
+  padding: 5px 10px;
+}
+
+.textPost {
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 20px;
+}
+.addBtn {
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  align-self: flex-end;
+}

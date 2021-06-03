@@ -1,8 +1,8 @@
 import React from 'react';
-import classes from './Maincontent.module.css';
-import Post from './Post';
+import classes from './ProfileInfo.module.css';
 
-const MainContent = () => {
+
+const ProfileInfo = () => {
     return (
         <div>
             <div className={classes.contentHeader}></div>
@@ -14,18 +14,9 @@ const MainContent = () => {
                 Quibusdam architecto ipsa error quo nostrum consequatur dolorum molestias tenetur cupiditate
                  atque illo similique non ad perspiciatis, veritatis voluptatibus, iusto, assumenda sint.</div>
             </div>
-            <div className={classes.userPosts}>
-                <div className={classes.newPost}>
-                    <textarea rows="3" placeholder="Add new post" className={classes.textPost}></textarea>
-                    <button className={classes.addBtn}>Add</button>
-                </div>
-                <Post message='Привет, как твои дела?' likes='15' />
-                <Post message='У меня все хорошо' likes='23' />
-            </div>
         </div>
     )
 
 }
 
-
-export default MainContent;
+export default ProfileInfo;

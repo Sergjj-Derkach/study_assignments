@@ -1,11 +1,11 @@
 import React from 'react';
 import classes from './New.module.css';
 
-const New = () => {
+const News = () => {
     return (
-        <div> New  </div>
+        <div> News  </div>
     )
 }
 
 
-export default New;
+export default News;
