@@ -8,9 +8,9 @@
     "n c";
   grid-template-rows: 2fr 9fr;
   grid-template-columns: 1fr 7fr;
-}
-.app-wrapper-main {
-  background-color: rgb(218, 221, 214);
-  grid-area: c;
-  padding: 10px;
+  .app-wrapper-main {
+    background-color: rgb(218, 221, 214);
+    grid-area: c;
+    padding: 10px;
+  }
 }

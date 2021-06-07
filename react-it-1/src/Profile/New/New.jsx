@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './New.module.css';
+import classes from './New.module.scss';
 
 const News = () => {
     return (

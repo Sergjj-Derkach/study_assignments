@@ -1,0 +1,16 @@
+.nav {
+  background-color: burlywood;
+  grid-area: n;
+  padding: 5px 20px;
+
+  .item {
+    background-color: burlywood;
+    border-radius: 10px;
+    margin: 10px auto;
+    text-align: center;
+
+    .active {
+      color: rgb(214, 210, 203);
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './NewUserPost.module.css';
+import classes from './NewUserPost.module.scss';
 
 const NewUserPost = ()=>{
     return(

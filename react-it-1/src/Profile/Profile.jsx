@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Profile.module.css';
+import classes from './Profile.module.scss';
 import NewUserPost from './ProfileInfo/NewUserPost/NewUserPost';
 import Post from './ProfileInfo/Post/Post';
 import ProfileInfo from './ProfileInfo/ProfileInfo';
