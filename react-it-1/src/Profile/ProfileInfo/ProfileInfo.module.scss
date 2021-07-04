@@ -1,0 +1,19 @@
+.profile {
+  display: flex;
+  align-items: center;
+  background-color: rgb(163, 178, 179);
+  padding: 10px 20px;
+  margin-top: 5px;
+}
+.profileFoto {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.foto {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: chocolate;
+}

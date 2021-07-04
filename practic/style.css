@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.root {
+  display: flex;
+  justify-content: space-around;
+  background-color: cadetblue;
+  padding: 5px;
+}
+.albums,
+.photos {
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+.album {
+  background-color: burlywood;
+  border-radius: 5px;
+  margin: 3px;
+  padding: 5px;
+}
+.album:hover {
+  cursor: pointer;
+}
+.albums {
+  width: 30%;
+  background-color: rgb(156, 136, 110);
+}
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+}
+.photo {
+  margin: 2px;
+  max-height: 154px;
+  border: 2px solid black;
+}
